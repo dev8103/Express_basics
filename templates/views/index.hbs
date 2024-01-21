@@ -1,0 +1,76 @@
+<!-- {% load static %} -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>ProPlanning</title>
+</head>
+
+<body>
+  <div class="landing">
+    
+    {{!-- Header rendering. --}}
+    {{>header}}
+
+    <div class="home">
+      <div class="home_main">
+        <div class="home_sub sub1">
+          <div class="writing">
+            <h1 class="heading"><span>Pro</span>Planning</h1>
+
+            <div class="slogan">
+              <h1>Elevate your Projects,</h1>
+              <h1>Simplify Your Success!!</h1>
+            </div>
+
+            <a href="login_form.html" class="login-button">Get Started</a>
+          </div>
+        </div>
+        <div class="home_sub sub2" id="hero_image_sub"></div>
+      </div>
+    </div>
+
+    <div id="whyproplannig"></div>
+    <div class="home">
+      <div class="home_main">
+        <div class="home_sub sub2" id="why_sub1"></div>
+        <div class="home_sub sub1" id="why_sub2">
+          <div class="writing why_writing" id="">
+            <h1 class="heading">Why ProPlanning?</h1>
+
+            <p class="para">
+              ProPlanning is a realistic project planning tool helping the
+              organisations in strategic alignment, leadership, clear focus
+              and objectives, quality control, risk management, and continuous
+              oversight.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="aboutus"></div>
+
+  {{!-- footer rendering --}}
+  {{>footer}}
+
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navid");
+      if (x.className === "options") {
+        x.className += " responsive";
+      } else {
+        x.className = "options";
+      }
+    }
+  </script>
+</body>
+
+</html>
